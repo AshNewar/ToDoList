@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <h1>Today is <%= day%> !</h1>
+        <ul>
+            <li>Playing Game</li>
+            <li>Watching Movies</li>
+            <li>Grocery</li>
+            <%for(var i=0;i<itemList.length ;i++){%>
+                <li><%= itemList[i] %></li>
+            <%}%>
+        </ul>
+        <form action="/" method="post">
+            <input type="text" name="item">
+            <button type="submit">Add</button>
+        </form>
+
+    </body>
+    </head>
+</html>   
