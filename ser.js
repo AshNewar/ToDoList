@@ -24,8 +24,8 @@ const data=mongoose.model("data",scheme);
 
 const dataArr=[];
 
-
-app.listen(3000,function(){
+const port = process.env.PORT || 3000;
+app.listen(port,function(){
     console.log("Server Started at 3000");
 });
 app.get("/",function(req,res){
